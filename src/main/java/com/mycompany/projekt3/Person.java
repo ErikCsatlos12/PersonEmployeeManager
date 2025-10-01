@@ -1,11 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.projekt3;
 
 public class Person {
     private String name;
+    private static int personCount = 0;
+
+    public Person() {
+        personCount++;
+    }
 
     public String getName() {
         return name;
@@ -13,6 +14,10 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public static int getPersonCount() {
+        return personCount;
     }
 
     public void bemutatkozo() {

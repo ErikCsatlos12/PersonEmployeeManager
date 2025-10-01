@@ -10,6 +10,10 @@ public class Projekt3 {
         p1.setName("Anna");
         szemelyek.add(p1);
 
+        Employee e2 = new Employee();
+        e2.setName("Macska");
+        e2.setSalary(4000);
+        szemelyek.add(e2);
         Employee e1 = new Employee();
         e1.setName("Bla");
         e1.setSalary(2000);
